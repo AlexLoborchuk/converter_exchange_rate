@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import axios from "axios";
+import { HeaderContainer } from "./components/HeaderComponent";
+import { BodyContainer } from "./components/BodyContainer";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [rates, setRate] = useState();
+  useEffect(() => {
+    axios
+      .get("https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11")
+      .then((resp) => {
+        setRate(resp.data);
+        console.log(resp.data);
+      });
+  }, [setRate]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderContainer rates={rates} />
+      <BodyContainer rates={rates} />
     </div>
   );
 }

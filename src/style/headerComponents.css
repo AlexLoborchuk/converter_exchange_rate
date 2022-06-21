@@ -1,0 +1,34 @@
+body {
+  background-color: #f9fafc;
+}
+
+.headerWrapper {
+  width: 100%;
+  border: 1px solid #e5eaf0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px #c2c2c2;
+}
+.headerWrapper__title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  color: #acacac;
+}
+.title {
+  padding: 10px 0;
+}
+.headerBlock {
+  margin: 10px 0 20px 0;
+}
+.headerWrapper__headerBlock {
+  display: flex;
+  justify-content: space-around;
+}
+.elements {
+  display: flex;
+}
+.elements__text {
+  padding: 2px;
+  font-size: 1.15rem;
+  color: #acacac;
+}

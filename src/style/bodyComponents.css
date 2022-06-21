@@ -1,0 +1,31 @@
+.bodyWrapper {
+  height: 100%;
+  margin-top: 15%;
+}
+.bodyForms {
+  width: 80%;
+  margin: 0 auto;
+}
+.bodyForms__selectCurrency {
+  width: 155px;
+  padding: 15px 0;
+  text-align: center;
+  border: 1px solid #bcbec2;
+  color: #4d4a4a;
+  border-radius: 5px;
+  font-size: 1.15rem;
+}
+.bodyForms__inputSum {
+  width: 350px;
+  padding: 15px 25px;
+  border: 1px solid #bcbec2;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: #4d4a4a;
+}
+.inputSum {
+  margin: 5px 10px;
+}
+.swapImage {
+  margin: 7px 0;
+}
